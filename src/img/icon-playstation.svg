@@ -1,0 +1,9 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="GameController">
+<path id="Vector" d="M19 13.5H23" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M9 13.5H13" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M11 11.5V15.5" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M21.5024 6.96747L10.5007 6.99999C8.97245 7.00011 7.4931 7.53852 6.32232 8.52073C5.15153 9.50293 4.36414 10.8662 4.09835 12.3711L4.09942 12.3713L2.05387 22.8916C1.92467 23.6247 2.03251 24.3798 2.36175 25.0474C2.69099 25.715 3.22446 26.2602 3.8847 26.6039C4.54494 26.9476 5.29756 27.0719 6.03325 26.9587C6.76894 26.8456 7.44939 26.5008 7.97578 25.9745L7.97557 25.9743L13.38 20L21.5024 19.9675C23.2263 19.9675 24.8796 19.2827 26.0986 18.0637C27.3176 16.8447 28.0024 15.1914 28.0024 13.4675C28.0024 11.7436 27.3176 10.0903 26.0986 8.87127C24.8796 7.65229 23.2263 6.96747 21.5024 6.96747V6.96747Z" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M27.9035 12.3388L29.9474 22.8917C30.0766 23.6247 29.9688 24.3799 29.6395 25.0474C29.3103 25.715 28.7768 26.2603 28.1166 26.604C27.4563 26.9477 26.7037 27.072 25.968 26.9588C25.2323 26.8456 24.5519 26.5008 24.0255 25.9745L24.0257 25.9743L18.625 19.979" stroke="#202020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

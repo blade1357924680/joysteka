@@ -1,0 +1,281 @@
+@import "./base/variables";
+
+.header {
+  width: 100%;
+  padding: 12px 0;
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 2px solid $white;
+  margin-bottom: 24px;
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include md {
+      flex-direction: column;
+    }
+  }
+
+  &__wrap-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    @include md {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @include sm {
+      flex-direction: column;
+    }
+    @include xs {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrap-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    @include lg {
+      width: 100%;
+      justify-content: flex-end;
+    }
+    @include md {
+      justify-content: center;
+    }
+    @include xs {
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+
+    @include sm {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__logo-text {
+    color: $primary;
+    font-family: $secondary-family;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    @include xs {
+      flex-direction: column;
+    }
+  }
+
+  &__list-item {
+    margin-right: 3px;
+    @include xs {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    &:last-child {
+      margin-right: 16px;
+      @include xs {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__list-link {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px 16px;
+    color: $primary;
+    transition: 0.1s;
+    border: 1px solid transparent;
+    @include lg {
+      font-size: 14px;
+    }
+    @include md {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background-color: $white;
+      border-radius: 16px;
+      border: 1px solid $white;
+    }
+
+    &:active {
+      border-radius: 16px;
+      border: 1px solid #c0c0c0;
+      background-color: $white;
+    }
+
+    &.active {
+      border-radius: 16px;
+      border: 1px solid $primary;
+      background-color: $white;
+    }
+  }
+
+  &__input-wrap {
+    position: relative;
+    @include xs {
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      background: url('../img/icon-search.svg') no-repeat;
+      left: 7px;
+      top: -3px;
+      width: 32px;
+      height: 32px;
+      @include lg {
+        background-size: 18px;
+        top: 1px;
+      }
+    }
+  }
+
+  &__wrap-icons {
+    display: flex;
+    align-items: center;
+    @include xs {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__input-search {
+    position: relative;
+    width: 390px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 2px solid $primary;
+    padding-left: 40px;
+    padding-bottom: 5px;
+    margin-right: 16px;
+    background-color: transparent;
+    @include lg {
+      width: 214px;
+    }
+    @include xs {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__user-elements {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lang-wrap {
+    margin-right: 16px;
+    @include lg {
+      margin-right: 5px;
+    }
+    @include xs {
+      margin-right: 0;
+    }
+  }
+
+  &__lang {
+    position: relative;
+    color: $primary;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    @include lg {
+      font-size: 16px;
+    }
+
+    &:first-child {
+      margin-right: 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: -8px;
+        top: 0;
+        width: 2px;
+        height: 24px;
+        background-color: $primary;
+        @include lg {
+          height: 19px;
+        }
+      }
+    }
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+
+  &__user-elements {
+    display: flex;
+    align-items: center;
+    @include xs {
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      @include lg {
+        width: 18px;
+        height: 18px;
+      }
+      @include md {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &__user-icon {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    margin-right: 16px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.active {
+      svg {
+        fill: $primary;
+        @include lg {
+          width: 18px;
+          height: 18px;
+        }
+        @include md {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}
