@@ -2,7 +2,7 @@
   &__details {
     margin-bottom: 16px;
     @include sm {
-      max-width: 540px;
+      max-width: 100%;
       margin: 0 auto 16px auto;
     }
   }
@@ -154,6 +154,10 @@
     margin-bottom: 16px;
     @include sm {
       flex-direction: column;
+      align-items: flex-end;
+    }
+    @include xs {
+      align-items: center;
     }
   }
 
@@ -387,6 +391,9 @@
 
   &__sliders-control-left {
     top: 1px;
+    border: 5px solid;
+    border-image: conic-gradient(red, green) 1; /* Устанавливаем conic gradient как изображение для границы */
+    border-image-slice: 1;
   }
 }
 
@@ -399,7 +406,6 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 50%;
   cursor: pointer;
   border-style: solid;
-  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }
 
 input[type=range]::-moz-range-thumb {
@@ -411,7 +417,6 @@ input[type=range]::-moz-range-thumb {
   border-radius: 30px;
   cursor: pointer;
   border-style: solid;
-  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }
 
 input[type="number"] {
@@ -449,6 +454,9 @@ input[type="number"] {
   @include lg {
     width: 78px;
     padding: 6px;
+  }
+  @include md {
+    width: 100px;
   }
 }
 
