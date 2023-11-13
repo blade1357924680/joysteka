@@ -7,6 +7,10 @@
   border-bottom: 2px solid $white;
   margin-bottom: 24px;
 
+  &_catalog {
+    margin-bottom: 17px;
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
